@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CityHitch – Find Travel Companions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CityHitch</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Find Your Perfect Travel Companion</h1>
+      <p>Connect with like-minded travelers sharing the same destination or route.</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </section>
+  </header>
+
+  <section class="trip-planner">
+    <h2>Plan Your Journey</h2>
+    <p>Enter your starting city and destination to find travel companions.</p>
+    <form class="trip-form">
+      <input list="cities" name="from" placeholder="Starting City" required>
+      <input list="cities" name="to" placeholder="Destination City" required>
+      <button type="submit">Find Buddies</button>
+
+      <datalist id="cities">
+        <option value="Delhi">
+        <option value="Mumbai">
+        <option value="Bengaluru">
+        <option value="Hyderabad">
+        <option value="Chennai">
+        <option value="Kolkata">
+        <option value="Goa">
+        <option value="Manali">
+        <option value="Jaipur">
+        <option value="Pune">
+        <option value="Udaipur">
+        <option value="Varanasi">
+        <option value="Rishikesh">
+        <option value="Shimla">
+        <option value="Agra">
+      </datalist>
+    </form>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCe3BaPC1yk_GWi5MYXo5gyGwcZcH6lBZA&q=India"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <section class="trip-stats">
+    <h2>CityHitch in Numbers</h2>
+    <div class="stats-grid">
+      <div class="stat-card"><h3>10,000+</h3><p>Travelers Joined</p></div>
+      <div class="stat-card"><h3>2,500+</h3><p>Trips Matched</p></div>
+      <div class="stat-card"><h3>150+</h3><p>Cities Covered</p></div>
+    </div>
+  </section>
+
+  <section class="destinations">
+    <h2>Top Trending Destinations</h2>
+    <div class="carousel">
+      <div class="city-card">Goa</div>
+      <div class="city-card">Manali</div>
+      <div class="city-card">Leh</div>
+      <div class="city-card">Rishikesh</div>
+      <div class="city-card">Jaipur</div>
+      <div class="city-card">Varanasi</div>
+    </div>
+  </section>
+
+  <section class="buddies">
+    <h2>Meet Our Star Travel Buddies</h2>
+    <div class="buddy-grid">
+      <div class="buddy-card">
+        <img src="https://i.pravatar.cc/100?img=1" alt="User 1">
+        <p><strong>Anjali, 24</strong><br>Food & nature lover from Mumbai</p>
+      </div>
+      <div class="buddy-card">
+        <img src="https://i.pravatar.cc/100?img=2" alt="User 2">
+        <p><strong>Ravi, 27</strong><br>Adventure junkie & photographer</p>
+      </div>
+      <div class="buddy-card">
+        <img src="https://i.pravatar.cc/100?img=3" alt="User 3">
+        <p><strong>Sneha, 22</strong><br>Solo traveler & yoga enthusiast</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Why Choose CityHitch?</h2>
+    <div class="feature-grid">
+      <div class="feature-item">🌍 Route-Based Travel Matching</div>
+      <div class="feature-item">✅ Verified User Profiles</div>
+      <div class="feature-item">💬 Real-time Messaging</div>
+      <div class="feature-item">🤝 Community Meetups</div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Sign up and create your profile</li>
+      <li>Add your travel plan with dates & destination</li>
+      <li>Get matched with compatible travelers</li>
+      <li>Chat and start your journey together</li>
+    </ol>
+  </section>
+
+  <section class="testimonials">
+    <h2>Trusted by Travelers</h2>
+    <p>“I met my best friend through CityHitch on a solo trip to Manali. It changed my life!”</p>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Privacy</a> | <a href="#">Terms</a>
+    </div>
+    <p>© 2025 CityHitch. All rights reserved.</p>
+  </footer>
+
+  <a href="#" class="floating-button" title="Suggest or Contact">+</a>
+</body>
+</html>
