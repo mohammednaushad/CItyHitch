@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | CityHitch Travel Buddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://source.unsplash.com/featured/?travel,nature') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .modal {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 950px;
+      display: flex;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .modal .left-section {
+      flex: 1;
+      background-image: url('https://images.unsplash.com/photo-1502920514313-52581002a659');
+      background-size: cover;
+      background-position: center;
+      display: none;
+    }
+
+    .modal .right-section {
+      flex: 1;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right-section h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .right-section p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .login-form .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 0.9rem;
+      border: none;
+      background-color: #2c3e50;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-form button:hover {
+      background-color: #1a242f;
+    }
+
+    .social-login {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-login button {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    @media(min-width: 768px) {
+      .modal .left-section {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <div class="left-section"></div>
+    <div class="right-section">
+      <a href="/CItyHitch/Frontend/Landingpage.html" style="align-self: flex-end; text-decoration: none; color: #2c3e50; margin-bottom: 1rem; font-weight: 600; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+        🏠 Home
+      </a>
+      <h2>Welcome Back to CityHitch</h2>
+      <p>Your travel buddies are waiting. Log in to reconnect and plan your next journey together!</p>
+      <form class="login-form">
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <div class="options">
+          <label><input type="checkbox"> Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit">Login - Explore Together</button>
+      </form>
+      <div class="social-login">
+        <button>🔵 Facebook</button>
+        <button>🟥 Google</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
